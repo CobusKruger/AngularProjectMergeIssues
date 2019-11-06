@@ -42,7 +42,7 @@ Error: A merge conflicted on path "/NewAngularAppWithSubtree/projects/new-lib/sr
 ```
 
 There are a couple of problems with this merge failure:
-1. The file with the merge conflict is a new file created by the library schematic. So since it didn't exist before, it appears the `library` schematic is conflicting with itself.
+1. The file with the merge conflict is a new file created by the `library` schematic. So since it didn't exist before, it appears the `library` schematic is conflicting with itself.
 2. There is no way to specify the `MergeStrategy` to use, as it happens within the `library` schematic.
 
 # How To Use This Project

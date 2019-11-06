@@ -6,7 +6,10 @@ src/**/*.d.ts
 # IDEs
 .idea/
 jsconfig.json
-.vscode/
+!.vscode/
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
 
 # Misc
 node_modules/

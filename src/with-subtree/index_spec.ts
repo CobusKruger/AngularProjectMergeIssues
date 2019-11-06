@@ -5,12 +5,10 @@ import * as path from 'path';
 
 const collectionPath = path.join(__dirname, '../collection.json');
 
-
-describe('without-subfolder', () => {
-  it('works', () => {
+describe('with-subtree', () => {
+  it('works', async () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
-    const tree = runner.runSchematic('without-subfolder', {}, Tree.empty());
-
+    const tree = await runner.runSchematicAsync('with-subtree', {}, Tree.empty()).toPromise();
     expect(tree.files).toEqual([]);
   });
 });

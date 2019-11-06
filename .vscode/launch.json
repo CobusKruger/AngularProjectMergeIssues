@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "No Subtree",
+            "program": "${workspaceRoot}/node_modules/@angular-devkit/schematics-cli/bin/schematics.js",
+            "args": [".:without-subtree"],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "With Subtree",
+            "program": "${workspaceRoot}/node_modules/@angular-devkit/schematics-cli/bin/schematics.js",
+            "args": [".:with-subtree"],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
+    ]
+}
