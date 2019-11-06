@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "without-subtree": {
+      "description": "Scaffolds an Angular project with a new library, but without applyToSubtree.",
+      "factory": "./without-subtree/index#createProject"
+    },
+    "with-subtree": {
+      "description": "Scaffolds an Angular project with a new library, nested within applyToSubtree",
+      "factory": "./with-subtree/index#createProject"
+    }
+  }
+}
